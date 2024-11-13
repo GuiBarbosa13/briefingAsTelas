@@ -51,6 +51,7 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
 
         const videoUrl = this.getAttribute('data-video');
         const descricaoTexto = this.getAttribute('data-descricao');
+        const estreiaTexto = this.getAttribute('data-estreia');
 
         const videoContainer = document.querySelector('.video-container');
         const episodioFrame = document.getElementById('episodio-frame');
@@ -70,13 +71,13 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
                 newImage.src = './assets/breve.png';  // Caminho da imagem "Em breve"
                 newImage.id = 'em-breve-image';
                 newImage.alt = 'Em breve';
-                newImage.style.width = '100%';
                 newImage.style.display = 'block';  // Exibe a imagem
                 videoContainer.appendChild(newImage);
             }
 
             // Atualiza a descrição
             document.getElementById('descricao-texto').innerText = descricaoTexto;
+            document.getElementById('estreia-texto').innerText = estreiaTexto;
         } else {
             // Remove a imagem de "Em breve" se o vídeo for válido
             if (emBreveImage) {
@@ -96,6 +97,7 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
 
             // Atualiza a descrição
             document.getElementById('descricao-texto').innerText = descricaoTexto;
+            document.getElementById('estreia-texto').innerText = estreiaTexto;
         }
     });
 });
