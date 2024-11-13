@@ -42,6 +42,13 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault();
 
+        // Obtém o nome do episódio do link clicado
+        const episodioNome = this.textContent;
+
+        // Atualiza o texto do botão com o nome do episódio
+        const dropdownButton = document.getElementById('dropdown-btn');
+        dropdownButton.textContent = episodioNome;  // Atualiza o botão para o nome do episódio
+
         const videoUrl = this.getAttribute('data-video');
         const descricaoTexto = this.getAttribute('data-descricao');
 
@@ -56,6 +63,7 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
 
         // Se for "em breve", mantém a imagem e altera a descrição
         if (videoUrl === "em breve") {
+            // Verifica se a imagem "em breve" já existe
             if (!emBreveImage) {
                 // Caso a imagem não exista, adicione-a novamente
                 const newImage = document.createElement('img');
@@ -63,13 +71,14 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
                 newImage.id = 'em-breve-image';
                 newImage.alt = 'Em breve';
                 newImage.style.width = '100%';
+                newImage.style.display = 'block';  // Exibe a imagem
                 videoContainer.appendChild(newImage);
             }
 
             // Atualiza a descrição
             document.getElementById('descricao-texto').innerText = descricaoTexto;
         } else {
-            // Remove a imagem de "Em breve"
+            // Remove a imagem de "Em breve" se o vídeo for válido
             if (emBreveImage) {
                 emBreveImage.remove();
             }
@@ -90,3 +99,4 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
         }
     });
 });
+
