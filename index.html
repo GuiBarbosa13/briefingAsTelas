@@ -6,92 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do Briefing às Telas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <div class="trailer" id="trailer">
-        <iframe src="https://drive.google.com/file/d/1iAyrovCu2kTsQfgHIe75Bm30UK0qQheM/preview" 
-            allow="autoplay" allowfullscreen>
-        </iframe>
-    </div>
-
-    <div class="descricao_container" id="descricao_container">
-        <div class="titulo_serie">
-            <img src="./assets/logo minimalista.png" alt="Logo do Briefing às Telas">
-            <P>Série documental</P>
+    <div class="container-site">
+        <div class="trailer" id="trailer">
+            <iframe src="https://drive.google.com/file/d/1iAyrovCu2kTsQfgHIe75Bm30UK0qQheM/preview" allow="autoplay"
+                allowfullscreen>
+            </iframe>
         </div>
-        <div class="subtitulo_serie">
-            <p>2024</p>
-            <p>|</p>
-            <p>1 temporada</p>
+
+        <div class="descricao_container" id="descricao_container">
+            <div class="titulo_serie">
+                <img src="./assets/logo minimalista.png" alt="Logo do Briefing às Telas">
+                <P>Série documental</P>
+            </div>
+            <div class="subtitulo_serie">
+                <p>2024</p>
+                <p>|</p>
+                <p>1 temporada</p>
+            </div>
+            <h3>Do Briefing às Telas</h3>
         </div>
-        <h3>Do Briefing às Telas</h3>
-    </div>
 
-    <section class="sinopse_serie" id="sinopse_serie">
-        <p>
-            Na primeira temporada de Do Briefing às Telas, conheça sete profissionais que são
-            peças-chave na criação de obras audiovisuais. Descubra como suas habilidades e paixões
-            transformam ideias em imagens, trazendo histórias à vida nas telonas.
-        </p>
-    </section>
+        <section class="sinopse_serie" id="sinopse_serie">
+            <p>
+                Na primeira temporada de Do Briefing às Telas, conheça sete profissionais que são
+                peças-chave na criação de obras audiovisuais. Descubra como suas habilidades e paixões
+                transformam ideias em imagens, trazendo histórias à vida nas telonas.
+            </p>
+        </section>
 
 
-    <section class="episodio">
-        <div class="container-botoes">
-            <div class="seletor_episodio">
-                <div class="dropdown">
-                    <button class="dropdown-btn" id="dropdown-btn">Escolha o Episódio</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-video="em breve"
-                            data-descricao="Apresentamos Valentina Pulgarin, apresentadora da Warner que conquistou o coração do público com seu carisma e autenticidade nas redes sociais. Valentina compartilha sua paixão pelo entretenimento, revelando como se transformou de estagiária para apresentadora de sucesso em uma das maiores redes de entretenimento do mundo."
-                            data-estreia="Disponível em: 29/11/2024">
-                            Valentina Pulgarin
-                        </a>
-                        <a href="#" data-video="em breve"
-                            data-descricao="Neste episódio, Leandro Carrasco, coordenador de produção da Globo, desvenda os bastidores do programa Conversa com o Bial. Ele revela como transformar ideias em entrevistas marcantes, desde a escolha dos convidados até os detalhes que fazem diferença em cada conversa.">
-                            Leandro Carrasco
-                        </a>
-    
-                        <a href="#" data-video="em breve"
-                            data-descricao="Conhecemos Ariel Jacobowitz, diretor do SBT com mais de 30 anos de carreira. Ele compartilha histórias envolventes sobre sua jornada na TV, desde dirigir ícones como Hebe Camargo e Eliana, até suas inovações que moldaram a programação brasileira.">
-                            Ariel Jacobowitz
-                        </a>
-    
-                        <a href="#" data-video="em breve"
-                            data-descricao="Conversamos com Alex Lee, diretor e roteirista da AT Films, escritor de campanhas publicitárias importantes, incluindo a transmissão do Oscar. Alex compartilha seu processo criativo e a importância de contar histórias que se conectam com o público.">
-                            Alex Lee
-                        </a>
-    
-                        <a href="#" data-video="em breve"
-                            data-descricao="Paloma Caroline, assistente de coordenação de arte na 02 Films, revela como o design impacta a pós-produção de filmes e séries. Ela destaca que a arte finaliza a emoção da obra, moldando narrativas e dando um toque final.">
-                            Paloma Caroline
-                        </a>
-    
-                        <a href="#" data-video="em breve"
-                            data-descricao="Thaís Gontijo, parte essencial das campanhas da Shell Select, explora o papel fundamental do briefing na produção audiovisual. Ela destaca como um bom planejamento de marketing é a base para campanhas impactantes.">
-                            Thaís Gontijo
-                        </a>
-    
-                        <a href="#" data-video="em breve"
-                            data-descricao="Neste episódio, Guilherme Padilha, videomaker e editor independente revela como a montagem e a edição são cruciais para a versão final de um projeto. Além de contar os segredos de como são gravados videoclipes musicais.">
-                            Guilherme Padilha
-                        </a>
+        <section class="episodio">
+            <div class="container-botoes">
+                <div class="seletor_episodio">
+                    <div class="dropdown">
+                        <button class="dropdown-btn" id="dropdown-btn">Escolha o Episódio</button>
+                        <div class="dropdown-content">
+                            <a href="#" data-video="em breve"
+                                data-descricao="Apresentamos Valentina Pulgarin, apresentadora da Warner que conquistou o coração do público com seu carisma e autenticidade nas redes sociais. Valentina compartilha sua paixão pelo entretenimento, revelando como se transformou de estagiária para apresentadora de sucesso em uma das maiores redes de entretenimento do mundo."
+                                data-estreia="Disponível em: 29/11/2024">
+                                Valentina Pulgarin
+                            </a>
+                            <a href="#" data-video="em breve"
+                                data-descricao="Neste episódio, Leandro Carrasco, coordenador de produção da Globo, desvenda os bastidores do programa Conversa com o Bial. Ele revela como transformar ideias em entrevistas marcantes, desde a escolha dos convidados até os detalhes que fazem diferença em cada conversa.">
+                                Leandro Carrasco
+                            </a>
+
+                            <a href="#" data-video="em breve"
+                                data-descricao="Conhecemos Ariel Jacobowitz, diretor do SBT com mais de 30 anos de carreira. Ele compartilha histórias envolventes sobre sua jornada na TV, desde dirigir ícones como Hebe Camargo e Eliana, até suas inovações que moldaram a programação brasileira.">
+                                Ariel Jacobowitz
+                            </a>
+
+                            <a href="#" data-video="em breve"
+                                data-descricao="Conversamos com Alex Lee, diretor e roteirista da AT Films, escritor de campanhas publicitárias importantes, incluindo a transmissão do Oscar. Alex compartilha seu processo criativo e a importância de contar histórias que se conectam com o público.">
+                                Alex Lee
+                            </a>
+
+                            <a href="#" data-video="em breve"
+                                data-descricao="Paloma Caroline, assistente de coordenação de arte na 02 Films, revela como o design impacta a pós-produção de filmes e séries. Ela destaca que a arte finaliza a emoção da obra, moldando narrativas e dando um toque final.">
+                                Paloma Caroline
+                            </a>
+
+                            <a href="#" data-video="em breve"
+                                data-descricao="Thaís Gontijo, parte essencial das campanhas da Shell Select, explora o papel fundamental do briefing na produção audiovisual. Ela destaca como um bom planejamento de marketing é a base para campanhas impactantes.">
+                                Thaís Gontijo
+                            </a>
+
+                            <a href="#" data-video="em breve"
+                                data-descricao="Neste episódio, Guilherme Padilha, videomaker e editor independente revela como a montagem e a edição são cruciais para a versão final de um projeto. Além de contar os segredos de como são gravados videoclipes musicais.">
+                                Guilherme Padilha
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <button class="voltar hide">
+                    <p>Voltar</p>
+                </button>
             </div>
-            <button class="voltar hide"><p>Voltar</p></button>
+            <div id="video-container" class="video-container"></div>
+
+            <div class="descricao_episodio">
+                <p id="estreia-texto"></p>
+                <p id="descricao-texto"></p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div class="rodape">
+
+            <a href="https://backstagest.myportfolio.com/" target="_blank">
+                <img src="./assets/logo backstage.png" alt="Logo backstage studios">
+            </a>
+
+            <div class="container-footer">
+                <p>"Do Briefing às Telas" é uma produção Backstage Studios.</p>
+
+                <div class="conheca-container">
+                    <a href="https://www.instagram.com/backstage.dbat?igsh=dGE3MjRya3g2NGJj" target="_blank"
+                        class="conheca">
+                        <p>Conheça o projeto</p>
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div id="video-container" class="video-container"></div>
 
-        <div class="descricao_episodio">
-            <p id="estreia-texto"></p>
-            <p id="descricao-texto"></p>
+        <div class="direitos">
+            <p><i class="bi bi-c-circle"></i> | Todos os direitos reservados</p>          
         </div>
-
-    </section>
-    <footer class="rodape">
-
     </footer>
 
     <script src="./app.js"></script>

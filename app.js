@@ -48,8 +48,8 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
             const iframe = document.createElement('iframe');
             iframe.id = 'episodio-frame';
             iframe.src = videoUrl;
-            iframe.width = '100%';
-            iframe.height = '220px';
+            // iframe.width = '100%';
+            // iframe.height = '220px';
             iframe.allow = 'autoplay';
             iframe.allowfullscreen = true;
 
@@ -76,4 +76,3 @@ document.querySelector('.voltar').addEventListener('click', function() {
     // Recarrega a página ao clicar no botão "Voltar"
     window.location.reload();
 });
-

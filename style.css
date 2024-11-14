@@ -17,6 +17,9 @@ body {
     font-family: var(--fonte-principal);
     color: var(--branco);
     background-color: var(--preto);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
 body {
@@ -66,7 +69,10 @@ ol {
     --branco: #FFF;
     --cinza: #d8d8d83b;
     --cinza2: #575757;
+    --azul:#2980b9;
 }
+
+
 
 .trailer {
     display: flex;
@@ -107,9 +113,10 @@ ol {
 
 .episodio {
 
-    .container-botoes{
+    .container-botoes {
         display: flex;
         align-items: center;
+        margin-bottom: 80px;
     }
 
     .seletor_episodio {
@@ -121,7 +128,7 @@ ol {
         display: inline-block;
     }
 
-    .dropdown-btn{
+    .dropdown-btn {
         padding: 10px 20px;
         background-color: var(--cinza);
         color: var(--branco);
@@ -132,7 +139,7 @@ ol {
     }
 
     .dropdown-btn:hover {
-        background-color: #2980b9;
+        background-color: var(--azul);
     }
 
     .dropdown-content {
@@ -162,17 +169,17 @@ ol {
 
     .voltar {
         padding: 10px 20px;
-        background-color: var(--cinza); /* Altere para a cor desejada */
-        color: var(--branco); /* Altere para a cor do texto desejada */
+        background-color: var(--cinza);
+        color: var(--branco);
         border: none;
         height: fit-content;
         cursor: pointer;
         font-size: 16px;
         border-radius: 5px;
     }
-    
+
     .voltar:hover {
-        background-color: #2980b9;
+        background-color: var(--azul);
     }
 
 
@@ -180,73 +187,155 @@ ol {
         border: none;
     }
 
-    .descricao_episodio{
+    .descricao_episodio {
         padding: 0 25px;
-        margin: 20px 0;
+        margin: 80px 0;
     }
 }
 
-.hide{
+.hide {
     display: none;
 }
 
+footer{
+    .direitos{
+        background-color: var(--branco);
+        color: var(--preto);
+        font-weight: 500;
+        text-align: center;
+    }
+}
 
-.rodape{
-    height: 60px;
+.rodape {
     width: 100%;
+    padding: 15px 25px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px var(--branco);
+    font-family: var(--fonte-secundaria);
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        gap: 40px;
+
+    }
+
+    .conheca-container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .conheca {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--cinza);
+        padding: 10px 20px;
+        border-radius: 10px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .conheca:hover{
+        background-color: var(--azul);
+    }
+
+    a {
+        font-size: 35px;
+        i{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    img {
+        width: 150px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-    .trailer{
+    .trailer {
         margin-bottom: 30px;
-        iframe{
+
+        iframe {
             width: 560px;
             height: 315px;
         }
     }
 
     .descricao_container {
-        padding: 0 128px;
+        padding: 0 64px;
         margin-bottom: 30px;
     }
 
     .sinopse_serie {
-        padding: 0 128px;
+        padding: 0 64px;
     }
 
     .episodio {
         .seletor_episodio {
-            padding: 20px 30px 20px 128px;
+            padding: 20px 30px 20px 64px;
         }
     }
 
-    .video-container{
+    .video-container {
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             width: 560px;
             height: 315px;
         }
 
-        iframe{
+        iframe {
             width: 560px;
             height: 315px;
         }
     }
 
-    .descricao_episodio{
-        p{
-            padding: 0 128px;
+    .descricao_episodio {
+        p {
+            padding: 0 64px;
             margin-bottom: 20px;
         }
-        
+
+    }
+
+    .rodape{
+        margin-top: 0px;
+        flex-direction: row;
+
+        img{
+            width: 70%;
+        }
+
+        .container-footer{
+            width: 50%;
+            align-items: start;
+        }
+
+        .conheca{
+            width: 100%;
+        }
     }
 }
 
 @media (min-width: 1025px) {
-    .trailer{
+    .trailer {
         margin-bottom: 40px;
-        iframe{
+
+        iframe {
             width: 896px;
             height: 504px;
         }
@@ -264,42 +353,70 @@ ol {
     }
 
     .episodio {
-        .dropdown-btn{
+        .dropdown-btn {
             font-size: 24px;
         }
+
         .seletor_episodio {
             padding: 20px 30px 20px 128px;
             font-size: 24px;
         }
     }
 
-    .voltar{
-        p{
+    .voltar {
+        p {
             font-size: 24px;
         }
-        
+
     }
 
-    .video-container{
+    .video-container {
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             width: 896px;
             height: 504px;
         }
 
-        iframe{
+        iframe {
             width: 896px;
             height: 504px;
         }
     }
 
-    .descricao_episodio{
-        p{
+    .descricao_episodio {
+        p {
             padding: 0 128px;
             font-size: 24px;
             margin-bottom: 20px;
         }
-        
+
+    }
+
+    .rodape{
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-size: 24px;
+
+        img{
+            width: 100%;
+        }
+
+        .container-footer{
+            width: 50%;
+            align-items: center;
+
+        }
+
+        .conheca-container{
+            justify-content: center;
+        }
+
+        .conheca{
+            width: 50%;
+        }
     }
 }
