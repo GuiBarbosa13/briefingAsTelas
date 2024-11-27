@@ -54,7 +54,7 @@ document.querySelectorAll('.dropdown-content a').forEach(link => {
             iframe.src = videoUrl;
             // iframe.width = '100%';
             // iframe.height = '220px';
-            iframe.allow = 'autoplay';
+            iframe.allow = 'autoplay; fullscreen';
             iframe.allowfullscreen = true;
 
             videoContainer.appendChild(iframe);
