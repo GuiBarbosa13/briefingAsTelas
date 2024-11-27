@@ -69,7 +69,7 @@ ol {
     --branco: #FFF;
     --cinza: #d8d8d83b;
     --cinza2: #575757;
-    --azul:#2980b9;
+    --azul: #2980b9;
 }
 
 
@@ -136,6 +136,7 @@ ol {
         cursor: pointer;
         font-size: 16px;
         border-radius: 5px;
+        min-width: fit-content;
     }
 
     .dropdown-btn:hover {
@@ -146,7 +147,7 @@ ol {
         display: none;
         position: absolute;
         background-color: var(--cinza2);
-        min-width: 160px;
+        min-width: fit-content;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         border-radius: 5px;
@@ -161,10 +162,6 @@ ol {
 
     .dropdown-content a:hover {
         background-color: var(--cinza);
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
     }
 
     .voltar {
@@ -185,6 +182,8 @@ ol {
 
     iframe {
         border: none;
+        width: 100%;
+        height: 220px;
     }
 
     .descricao_episodio {
@@ -197,8 +196,8 @@ ol {
     display: none;
 }
 
-footer{
-    .direitos{
+footer {
+    .direitos {
         background-color: var(--branco);
         color: var(--preto);
         font-weight: 500;
@@ -226,7 +225,7 @@ footer{
 
     }
 
-    .conheca-container{
+    .conheca-container {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -247,13 +246,14 @@ footer{
         }
     }
 
-    .conheca:hover{
+    .conheca:hover {
         background-color: var(--azul);
     }
 
     a {
         font-size: 35px;
-        i{
+
+        i {
             display: flex;
             align-items: center;
         }
@@ -312,20 +312,20 @@ footer{
 
     }
 
-    .rodape{
+    .rodape {
         margin-top: 0px;
         flex-direction: row;
 
-        img{
+        img {
             width: 70%;
         }
 
-        .container-footer{
+        .container-footer {
             width: 50%;
             align-items: start;
         }
 
-        .conheca{
+        .conheca {
             width: 100%;
         }
     }
@@ -394,28 +394,28 @@ footer{
 
     }
 
-    .rodape{
+    .rodape {
         margin-top: 0px;
         flex-direction: row;
         justify-content: space-between;
 
         font-size: 24px;
 
-        img{
+        img {
             width: 100%;
         }
 
-        .container-footer{
+        .container-footer {
             width: 50%;
             align-items: center;
 
         }
 
-        .conheca-container{
+        .conheca-container {
             justify-content: center;
         }
 
-        .conheca{
+        .conheca {
             width: 50%;
         }
     }
