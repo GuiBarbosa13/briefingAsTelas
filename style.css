@@ -189,6 +189,10 @@ ol {
     .descricao_episodio {
         padding: 0 25px;
         margin: 80px 0;
+
+        #descricao-texto{
+            margin-top: 20px;
+        }
     }
 }
 
